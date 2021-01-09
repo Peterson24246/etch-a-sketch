@@ -28,8 +28,8 @@ function resetBlocks(e) {
 
 // Change the color of an individual block when moused over
 function colorChange(e) {
-    console.log(e.target);
-    this.style['background-color'] = 'black';
+    const newColor = document.querySelector('#color-picker').value
+    this.style['background-color'] = newColor;
 }
 
 
